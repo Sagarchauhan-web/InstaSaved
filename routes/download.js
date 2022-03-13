@@ -10,4 +10,12 @@ router.route('/').post(async (req, res) => {
   }
 });
 
+router.route('/').get(async (req, res) => {
+  try {
+    res.status(200).json({ status: 'success' });
+  } catch (err) {
+    res.status(500).json({ status: 'failed' });
+  }
+});
+
 module.exports = router;
