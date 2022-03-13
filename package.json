@@ -10,8 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.26.1",
     "cors": "^2.8.5",
     "express": "^4.17.3",
+    "node-html-parser": "^5.3.2",
     "nodemon": "^2.0.15"
   }
 }
