@@ -12,8 +12,6 @@ app.use(cors());
 
 app.use('/api/download', downloadRouter);
 
-const Port = process.env.PORT;
-
-app.listen(Port, (err) => {
+app.listen(process.env.PORT || 5000, (err) => {
   console.log(`server has started`);
 });
